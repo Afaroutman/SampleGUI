@@ -2,6 +2,7 @@ package GUI.view;
 
 import javax.swing.JFrame;
 import GUI.controller.SampleController;
+import java.awt.Color;
 
 public class SampleFrame extends JFrame
 {
@@ -10,8 +11,10 @@ public class SampleFrame extends JFrame
 	
 	public SampleFrame(SampleController baseController)
 	{
+		setBackground(Color.DARK_GRAY);
 		this.baseController = baseController;
 		basePanel = new SamplePanel(baseController);
+		basePanel.setBackground(Color.GREEN);
 	
 		
 		setupFrame();
